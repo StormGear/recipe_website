@@ -301,6 +301,13 @@ Navbar
   display: flex;
   flex-direction: column;
   /* todo  */ 
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.show-links {
+  height: 310px;
 }
 
 .nav-link {
@@ -321,7 +328,92 @@ Navbar
 
 .nav-link-text:hover {
   color: var(--primary-500);
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
+
+/* Some media queries  */
+@media screen and (min-width: 950px) {
+  .nav-btn {
+    display: none;
+  }
+  .navbar {
+    height: 6rem;
+  }
+  .nav-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-header {
+    height: auto;
+    margin-right: 2rem;
+  }
+
+  .nav-links {
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end
+  }
+
+  .nav-link {
+    padding: 0;
+    border-top: none;
+    margin-right: 1rem;
+    font-size: 1rem;
+  }
+
+  .contact-link {
+    margin-left: 1rem;
+  } 
+}
+
+/*
+===============
+Page
+===============
+*/
+
+.page {
+  width: 90vw;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-top: 2rem ;
+  min-height: calc(100vh - (6rem + 4rem));
+}
+
+
+/* 
+===============
+Footer
+===============
+*/
+.page-footer {
+  height: 4rem;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.page-footer p {
+  margin: 0;
+}
+
+.page-footer a {
+  color: var(--primary-600);
+}
+
+/* 
+===============
+Footer
+===============
+*/
+
+
+
+
 
 
