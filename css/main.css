@@ -65,7 +65,7 @@ html {
 }
 
 body {
-  background: var(--backgroundColor);
+  background: var(--white);
   font-family: var(--bodyFont);
   font-weight: 400;
   line-height: 1.75;
@@ -431,7 +431,7 @@ Hero section
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: 1rem
 }
 
 .hero-text {
@@ -460,11 +460,64 @@ Recipes section
 .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .tags-container {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.recipes-list {
+  display: grid;
+  gap: 2rem 1rem;
+  padding-bottom: 2rem;
+  /* border: 2px solid green; */
+}
+
+.tags-container h4 {
+  margin-bottom: 1rem;
+}
+
+.tags-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tags-list a {
+  display: block;
+  color: var(--grey-800);
+  transition: var(--transition);
+}
+
+.tags-list a:hover {
+  color: var(--primary-500);
+}
+
+.recipe {
+  display: block;
+}
+
+.recipe-img {
+  height: 15rem;
+  border-radius: var(--borderRadius);
+  margin-bottom: 1rem;
+}
+
+.recipe h4 {
+  margin-bottom: 0;
+  line-height: 1;
+  color: var(--grey-800);
+}
+
+.recipe p {
+  margin-bottom: 0;
+  color: var(--grey-600);
+  margin-top: 0.5rem;
+  letter-spacing: var(--letterSpacing);
+  line-height: 1;
 }
 
 
