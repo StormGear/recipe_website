@@ -474,7 +474,7 @@ Recipes section
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 2rem;
-  /* border: 2px solid green; */
+  border: 2px solid green;
 }
 
 .tags-container h4 {
@@ -520,6 +520,27 @@ Recipes section
   line-height: 1;
 }
 
+@media screen and (min-width: 576px) {
+  .recipes-list {
+    grid-template-columns: 1fr 1fr;
+  }
 
+  /* .recipe-img {
+    height: 10rem;
+  } */
+  
+}
+
+@media screen and (min-width: 992px) {
+  .recipes-container {
+    grid-template-columns: 200px 1fr;
+  }
+
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+}
 
 
