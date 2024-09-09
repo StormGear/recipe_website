@@ -460,7 +460,7 @@ Recipes section
 .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  /* border: 2px solid red; */
+  border: 2px solid red;       
 }
 
 .tags-container {
@@ -536,11 +536,18 @@ Recipes section
     grid-template-columns: 200px 1fr;
   }
 
+  .tags-list {
+    grid-template-columns: 1fr;
+  }
+
   
 }
 
 @media screen and (min-width: 1200px) {
-
+   .recipes-list {
+    grid-template-columns: 1fr 1fr 1fr;
+   }
+  
 }
 
 
