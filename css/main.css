@@ -550,4 +550,26 @@ Recipes section
   
 }
 
+/* 
+===============
+Error page
+===============
+*/
+.error-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-page h3 {
+  font-size: 1rem;
+}
+
+.error-page h1 {
+  font-size: 5rem;
+}
+
+
+
 
