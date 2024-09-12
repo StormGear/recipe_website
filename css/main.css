@@ -570,6 +570,48 @@ Error page
   font-size: 5rem;
 }
 
+/* 
+===============
+About page
+===============
+*/
+.about-page {
+  display: grid;
+  gap: 2rem 4rem;
+  padding-bottom: 3rem;
+}
+
+.about-page h2 {
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-img {
+  border-radius: var(--borderRadius);
+  height: 20rem;
+}
+
+@media screen and (min-width: 992px) {
+  .about-page {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px;
+  }
+  
+}
+
+.contact-container {
+  display: grid;
+  /* gap: 2rem 1rem; */
+}
+
+@media screen and (min-width: 992px) {
+  .contact-container {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px;
+  }
+  
+}
+
 
 
 
