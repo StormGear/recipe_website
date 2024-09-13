@@ -462,7 +462,7 @@ Recipes section
 .recipes-container {
   display: grid;
   gap: 2rem 1rem;
-  border: 2px solid red;       
+  /* border: 2px solid red;        */
 }
 
 .tags-container {
@@ -476,7 +476,7 @@ Recipes section
   display: grid;
   gap: 2rem 1rem;
   padding-bottom: 2rem;
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .tags-container h4 {
@@ -615,11 +615,64 @@ About page
   .in-touch {
     margin: 5rem auto;
   }
-
-  
   
 }
 
+.tags {
+  display: grid;
+  gap: 2rem 2rem;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.tag-item {
+  border-radius: var(--borderRadius);
+  background: var(--primary-500);
+  color: var(--white);
+  text-transform: capitalize;
+  letter-spacing: var(--letterSpacing);
+  text-align: center;
+  padding: 0.5rem 1rem;
+  width: 90%;
+}
+
+.tag-item:last-child {
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .tags {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem 2rem;
+
+  }
+
+  .tag-item {
+    width: 90%;
+  }
+
+  .tag-item:last-child {
+    margin-bottom: 0;
+  }
+  
+}
+
+@media screen and (min-width: 992px) {
+  .tags {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+  }
+
+  .tag-item {
+    width: 90%;
+  }
+
+  .tag-item:last-child {
+    margin-bottom: 0;
+  }
+  
+}
 
 
 
