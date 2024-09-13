@@ -12,15 +12,16 @@ html {
 
 :root {
   /* colors */
-  --primary-100: #e2e0ff;
-  --primary-200: #c1beff;
-  --primary-300: #a29dff;
-  --primary-400: #837dff;
-  --primary-500: #645cff;
-  --primary-600: #504acc;
-  --primary-700: #3c3799;
-  --primary-800: #282566;
-  --primary-900: #141233;
+
+  --primary-100: #fff7e0;
+  --primary-200: #ffebc1;
+  --primary-300: #ffdf9d;
+  --primary-400: #ffd37d;
+  --primary-500: #ffc75c;
+  --primary-600: #cc9f4a;
+  --primary-700: #997737;
+  --primary-800: #664f25;
+  --primary-900: #332812;
 
   /* grey */
   --grey-50: #f8fafc;
@@ -283,6 +284,7 @@ Navbar
 .nav-logo {
   display: flex;
   align-items: center;
+  height: 200px;
 }
 
 .nav-header img {
@@ -609,6 +611,12 @@ About page
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px;
   }
+
+  .in-touch {
+    margin: 5rem auto;
+  }
+
+  
   
 }
 
