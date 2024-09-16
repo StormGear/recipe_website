@@ -840,8 +840,12 @@ About page
   color: var(--grey-700);
 }
 
-.recipe-content {
-  
+.single-tool {
+  border-bottom: 2px solid var(--grey-300);
+  padding-bottom: 0.75rem;
+  color: var(--primary-500);
+  text-transform: capitalize;
+  font-weight: 600;
 }
 
 
